@@ -84,7 +84,7 @@ final class FavoritePhotosViewController: UIViewController {
         
         self.activityIndicator.startAnimating()
         viewModel.timer?.invalidate()
-        viewModel.timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { [weak self] _ in
+        viewModel.timer = Timer.scheduledTimer(withTimeInterval: 0.9, repeats: true, block: { [weak self] _ in
             
             var snapshot = NSDiffableDataSourceSnapshot<FavoritePhotosSection, PhotoInfoDB>()
             let items = RealmManadger.shared.items()
