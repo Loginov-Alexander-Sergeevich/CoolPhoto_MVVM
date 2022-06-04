@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E4849ED28487D590054F7CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4849EC28487D590054F7CB /* AppDelegate.swift */; };
+		4E4849EF28487D590054F7CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4849EE28487D590054F7CB /* SceneDelegate.swift */; };
+		4E4849F628487D5B0054F7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4849F528487D5B0054F7CB /* Assets.xcassets */; };
+		4E4849F928487D5B0054F7CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4849F728487D5B0054F7CB /* LaunchScreen.storyboard */; };
+		4E484A0C284880490054F7CB /* SearchPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A0B284880490054F7CB /* SearchPhotosViewController.swift */; };
+		4E484A0E284880630054F7CB /* SearchPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A0D284880630054F7CB /* SearchPhotosViewModel.swift */; };
+		4E484A102848807F0054F7CB /* FavoritePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A0F2848807F0054F7CB /* FavoritePhotosViewController.swift */; };
+		4E484A122848808D0054F7CB /* FavoritePhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A112848808D0054F7CB /* FavoritePhotosViewModel.swift */; };
+		4E484A14284880A20054F7CB /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A13284880A20054F7CB /* PhotoDetailsViewController.swift */; };
+		4E484A16284880B10054F7CB /* PhotoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A15284880B10054F7CB /* PhotoDetailsViewModel.swift */; };
+		4E484A182848814D0054F7CB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A172848814D0054F7CB /* TabBarController.swift */; };
+		4E484A1C284881F90054F7CB /* SearchPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A1B284881F90054F7CB /* SearchPhotosCollectionViewCell.swift */; };
+		4E484A20284882320054F7CB /* FavoritePhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A1F284882320054F7CB /* FavoritePhotosCollectionViewCell.swift */; };
+		4E484A252848827C0054F7CB /* NetworkManadger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A242848827C0054F7CB /* NetworkManadger.swift */; };
+		4E484A28284882DC0054F7CB /* SearchPhotosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A27284882DC0054F7CB /* SearchPhotosRequest.swift */; };
+		4E484A2A2848832B0054F7CB /* PhotoDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A292848832B0054F7CB /* PhotoDetailsRequest.swift */; };
+		4E484A2D284883570054F7CB /* RealmManadger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A2C284883570054F7CB /* RealmManadger.swift */; };
+		4E484A30284883DB0054F7CB /* PhotoInfoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A2F284883DB0054F7CB /* PhotoInfoDB.swift */; };
+		4E484A322848841F0054F7CB /* PhotoSearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A312848841F0054F7CB /* PhotoSearchResultModel.swift */; };
+		4E484A34284884330054F7CB /* PhotoStatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A33284884330054F7CB /* PhotoStatisticsModel.swift */; };
+		4E484A36284885180054F7CB /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A35284885180054F7CB /* Extension + UIView.swift */; };
+		4E484A39284885310054F7CB /* Extension + UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A38284885310054F7CB /* Extension + UIStackView.swift */; };
+		4E484A3E284886580054F7CB /* SearchPhotosSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A3D284886580054F7CB /* SearchPhotosSection.swift */; };
+		4E484A402848867A0054F7CB /* FavoritePhotosSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E484A3F2848867A0054F7CB /* FavoritePhotosSection.swift */; };
+		4E484A43284888250054F7CB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4E484A42284888250054F7CB /* SnapKit */; };
+		4E484A46284888800054F7CB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4E484A45284888800054F7CB /* Realm */; };
+		4E484A48284888800054F7CB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4E484A47284888800054F7CB /* RealmSwift */; };
+		4E484A4B284888A10054F7CB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4E484A4A284888A10054F7CB /* SDWebImage */; };
+		4E484A4D284888A10054F7CB /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4E484A4C284888A10054F7CB /* SDWebImageMapKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E4849E928487D590054F7CB /* CoolPhotosMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolPhotosMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4849EC28487D590054F7CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E4849EE28487D590054F7CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4E4849F528487D5B0054F7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E4849F828487D5B0054F7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E4849FA28487D5B0054F7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E484A0B284880490054F7CB /* SearchPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosViewController.swift; sourceTree = "<group>"; };
+		4E484A0D284880630054F7CB /* SearchPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosViewModel.swift; sourceTree = "<group>"; };
+		4E484A0F2848807F0054F7CB /* FavoritePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotosViewController.swift; sourceTree = "<group>"; };
+		4E484A112848808D0054F7CB /* FavoritePhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotosViewModel.swift; sourceTree = "<group>"; };
+		4E484A13284880A20054F7CB /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		4E484A15284880B10054F7CB /* PhotoDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewModel.swift; sourceTree = "<group>"; };
+		4E484A172848814D0054F7CB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4E484A1B284881F90054F7CB /* SearchPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E484A1F284882320054F7CB /* FavoritePhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E484A242848827C0054F7CB /* NetworkManadger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManadger.swift; sourceTree = "<group>"; };
+		4E484A27284882DC0054F7CB /* SearchPhotosRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosRequest.swift; sourceTree = "<group>"; };
+		4E484A292848832B0054F7CB /* PhotoDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsRequest.swift; sourceTree = "<group>"; };
+		4E484A2C284883570054F7CB /* RealmManadger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManadger.swift; sourceTree = "<group>"; };
+		4E484A2F284883DB0054F7CB /* PhotoInfoDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoDB.swift; sourceTree = "<group>"; };
+		4E484A312848841F0054F7CB /* PhotoSearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchResultModel.swift; sourceTree = "<group>"; };
+		4E484A33284884330054F7CB /* PhotoStatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStatisticsModel.swift; sourceTree = "<group>"; };
+		4E484A35284885180054F7CB /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		4E484A38284885310054F7CB /* Extension + UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIStackView.swift"; sourceTree = "<group>"; };
+		4E484A3D284886580054F7CB /* SearchPhotosSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosSection.swift; sourceTree = "<group>"; };
+		4E484A3F2848867A0054F7CB /* FavoritePhotosSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotosSection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E4849E628487D590054F7CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E484A48284888800054F7CB /* RealmSwift in Frameworks */,
+				4E484A4D284888A10054F7CB /* SDWebImageMapKit in Frameworks */,
+				4E484A46284888800054F7CB /* Realm in Frameworks */,
+				4E484A4B284888A10054F7CB /* SDWebImage in Frameworks */,
+				4E484A43284888250054F7CB /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E4849E028487D590054F7CB = {
+			isa = PBXGroup;
+			children = (
+				4E4849EB28487D590054F7CB /* CoolPhotosMVVM */,
+				4E4849EA28487D590054F7CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E4849EA28487D590054F7CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E4849E928487D590054F7CB /* CoolPhotosMVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E4849EB28487D590054F7CB /* CoolPhotosMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A0028487D8B0054F7CB /* Views */,
+				4E484A0428487DBF0054F7CB /* Network */,
+				4E484A0228487DA30054F7CB /* Models */,
+				4E484A0328487DB10054F7CB /* Realm */,
+				4E484A0128487D940054F7CB /* Extensions */,
+				4E484A3A2848860B0054F7CB /* Enams */,
+				4E4849EC28487D590054F7CB /* AppDelegate.swift */,
+				4E4849EE28487D590054F7CB /* SceneDelegate.swift */,
+				4E4849F528487D5B0054F7CB /* Assets.xcassets */,
+				4E4849F728487D5B0054F7CB /* LaunchScreen.storyboard */,
+				4E4849FA28487D5B0054F7CB /* Info.plist */,
+			);
+			path = CoolPhotosMVVM;
+			sourceTree = "<group>";
+		};
+		4E484A0028487D8B0054F7CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A0828487E840054F7CB /* SearchPhotos */,
+				4E484A0928487E9A0054F7CB /* FavoritePhotos */,
+				4E484A0A28487ECC0054F7CB /* PhotoDetails */,
+				4E484A0728487E420054F7CB /* TabBar */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E484A0128487D940054F7CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A35284885180054F7CB /* Extension + UIView.swift */,
+				4E484A38284885310054F7CB /* Extension + UIStackView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4E484A0228487DA30054F7CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A312848841F0054F7CB /* PhotoSearchResultModel.swift */,
+				4E484A33284884330054F7CB /* PhotoStatisticsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4E484A0328487DB10054F7CB /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A2B284883400054F7CB /* RealmManadger */,
+				4E484A2E2848835C0054F7CB /* RealmBD */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		4E484A0428487DBF0054F7CB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A23284882500054F7CB /* NetworkManadger */,
+				4E484A26284882830054F7CB /* Request */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4E484A0728487E420054F7CB /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A172848814D0054F7CB /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4E484A0828487E840054F7CB /* SearchPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A0B284880490054F7CB /* SearchPhotosViewController.swift */,
+				4E484A0D284880630054F7CB /* SearchPhotosViewModel.swift */,
+				4E484A192848819C0054F7CB /* SearchPhotosCollectionViewCell */,
+			);
+			path = SearchPhotos;
+			sourceTree = "<group>";
+		};
+		4E484A0928487E9A0054F7CB /* FavoritePhotos */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A0F2848807F0054F7CB /* FavoritePhotosViewController.swift */,
+				4E484A112848808D0054F7CB /* FavoritePhotosViewModel.swift */,
+				4E484A1A284881B70054F7CB /* FavoritePhotosCollectionViewCell */,
+			);
+			path = FavoritePhotos;
+			sourceTree = "<group>";
+		};
+		4E484A0A28487ECC0054F7CB /* PhotoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A13284880A20054F7CB /* PhotoDetailsViewController.swift */,
+				4E484A15284880B10054F7CB /* PhotoDetailsViewModel.swift */,
+			);
+			path = PhotoDetails;
+			sourceTree = "<group>";
+		};
+		4E484A192848819C0054F7CB /* SearchPhotosCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A1B284881F90054F7CB /* SearchPhotosCollectionViewCell.swift */,
+			);
+			path = SearchPhotosCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		4E484A1A284881B70054F7CB /* FavoritePhotosCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A1F284882320054F7CB /* FavoritePhotosCollectionViewCell.swift */,
+			);
+			path = FavoritePhotosCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		4E484A23284882500054F7CB /* NetworkManadger */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A242848827C0054F7CB /* NetworkManadger.swift */,
+			);
+			path = NetworkManadger;
+			sourceTree = "<group>";
+		};
+		4E484A26284882830054F7CB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A27284882DC0054F7CB /* SearchPhotosRequest.swift */,
+				4E484A292848832B0054F7CB /* PhotoDetailsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		4E484A2B284883400054F7CB /* RealmManadger */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A2C284883570054F7CB /* RealmManadger.swift */,
+			);
+			path = RealmManadger;
+			sourceTree = "<group>";
+		};
+		4E484A2E2848835C0054F7CB /* RealmBD */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A2F284883DB0054F7CB /* PhotoInfoDB.swift */,
+			);
+			path = RealmBD;
+			sourceTree = "<group>";
+		};
+		4E484A3A2848860B0054F7CB /* Enams */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A3B284886190054F7CB /* SearchPhotosSection */,
+				4E484A3C2848862A0054F7CB /* FavoritePhotosSection */,
+			);
+			path = Enams;
+			sourceTree = "<group>";
+		};
+		4E484A3B284886190054F7CB /* SearchPhotosSection */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A3D284886580054F7CB /* SearchPhotosSection.swift */,
+			);
+			path = SearchPhotosSection;
+			sourceTree = "<group>";
+		};
+		4E484A3C2848862A0054F7CB /* FavoritePhotosSection */ = {
+			isa = PBXGroup;
+			children = (
+				4E484A3F2848867A0054F7CB /* FavoritePhotosSection.swift */,
+			);
+			path = FavoritePhotosSection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E4849E828487D590054F7CB /* CoolPhotosMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E4849FD28487D5B0054F7CB /* Build configuration list for PBXNativeTarget "CoolPhotosMVVM" */;
+			buildPhases = (
+				4E4849E528487D590054F7CB /* Sources */,
+				4E4849E628487D590054F7CB /* Frameworks */,
+				4E4849E728487D590054F7CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoolPhotosMVVM;
+			packageProductDependencies = (
+				4E484A42284888250054F7CB /* SnapKit */,
+				4E484A45284888800054F7CB /* Realm */,
+				4E484A47284888800054F7CB /* RealmSwift */,
+				4E484A4A284888A10054F7CB /* SDWebImage */,
+				4E484A4C284888A10054F7CB /* SDWebImageMapKit */,
+			);
+			productName = CoolPhotosMVVM;
+			productReference = 4E4849E928487D590054F7CB /* CoolPhotosMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E4849E128487D590054F7CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					4E4849E828487D590054F7CB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 4E4849E428487D590054F7CB /* Build configuration list for PBXProject "CoolPhotosMVVM" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E4849E028487D590054F7CB;
+			packageReferences = (
+				4E484A41284888250054F7CB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4E484A44284888800054F7CB /* XCRemoteSwiftPackageReference "realm-swift" */,
+				4E484A49284888A10054F7CB /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 4E4849EA28487D590054F7CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E4849E828487D590054F7CB /* CoolPhotosMVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E4849E728487D590054F7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E4849F928487D5B0054F7CB /* LaunchScreen.storyboard in Resources */,
+				4E4849F628487D5B0054F7CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E4849E528487D590054F7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E484A402848867A0054F7CB /* FavoritePhotosSection.swift in Sources */,
+				4E484A322848841F0054F7CB /* PhotoSearchResultModel.swift in Sources */,
+				4E484A14284880A20054F7CB /* PhotoDetailsViewController.swift in Sources */,
+				4E484A2D284883570054F7CB /* RealmManadger.swift in Sources */,
+				4E4849ED28487D590054F7CB /* AppDelegate.swift in Sources */,
+				4E484A16284880B10054F7CB /* PhotoDetailsViewModel.swift in Sources */,
+				4E484A252848827C0054F7CB /* NetworkManadger.swift in Sources */,
+				4E484A30284883DB0054F7CB /* PhotoInfoDB.swift in Sources */,
+				4E484A182848814D0054F7CB /* TabBarController.swift in Sources */,
+				4E484A39284885310054F7CB /* Extension + UIStackView.swift in Sources */,
+				4E484A20284882320054F7CB /* FavoritePhotosCollectionViewCell.swift in Sources */,
+				4E484A28284882DC0054F7CB /* SearchPhotosRequest.swift in Sources */,
+				4E484A0E284880630054F7CB /* SearchPhotosViewModel.swift in Sources */,
+				4E484A1C284881F90054F7CB /* SearchPhotosCollectionViewCell.swift in Sources */,
+				4E4849EF28487D590054F7CB /* SceneDelegate.swift in Sources */,
+				4E484A122848808D0054F7CB /* FavoritePhotosViewModel.swift in Sources */,
+				4E484A0C284880490054F7CB /* SearchPhotosViewController.swift in Sources */,
+				4E484A2A2848832B0054F7CB /* PhotoDetailsRequest.swift in Sources */,
+				4E484A3E284886580054F7CB /* SearchPhotosSection.swift in Sources */,
+				4E484A102848807F0054F7CB /* FavoritePhotosViewController.swift in Sources */,
+				4E484A34284884330054F7CB /* PhotoStatisticsModel.swift in Sources */,
+				4E484A36284885180054F7CB /* Extension + UIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E4849F728487D5B0054F7CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E4849F828487D5B0054F7CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E4849FB28487D5B0054F7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E4849FC28487D5B0054F7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E4849FE28487D5B0054F7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G52SNX4NPA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoolPhotosMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loginov.CoolPhotosMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E4849FF28487D5B0054F7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G52SNX4NPA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoolPhotosMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loginov.CoolPhotosMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E4849E428487D590054F7CB /* Build configuration list for PBXProject "CoolPhotosMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E4849FB28487D5B0054F7CB /* Debug */,
+				4E4849FC28487D5B0054F7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E4849FD28487D5B0054F7CB /* Build configuration list for PBXNativeTarget "CoolPhotosMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E4849FE28487D5B0054F7CB /* Debug */,
+				4E4849FF28487D5B0054F7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E484A41284888250054F7CB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		4E484A44284888800054F7CB /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4E484A49284888A10054F7CB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E484A42284888250054F7CB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E484A41284888250054F7CB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		4E484A45284888800054F7CB /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E484A44284888800054F7CB /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		4E484A47284888800054F7CB /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E484A44284888800054F7CB /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		4E484A4A284888A10054F7CB /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E484A49284888A10054F7CB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		4E484A4C284888A10054F7CB /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E484A49284888A10054F7CB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4E4849E128487D590054F7CB /* Project object */;
+}
